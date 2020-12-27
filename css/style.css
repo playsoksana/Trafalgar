@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #7d7987;
+}
+
+body {
+  font-family: Mulish, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0em;
+  margin: 0;
+  color: var(--primary-color);
+}
