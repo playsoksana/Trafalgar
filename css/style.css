@@ -1,5 +1,10 @@
 :root {
   --primary-color: #7d7987;
+  --accent-color: #458ff6;
+  --title-color: #000000;
+  --background-primari: #e5e5e5;
+  --white-color: #ffffff;
+  --nav-color: #1f1534;
 }
 
 body {
@@ -11,4 +16,210 @@ body {
   letter-spacing: 0em;
   margin: 0;
   color: var(--primary-color);
+  background-color: var(--white-color);
+}
+
+/* Сброс стилей */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.link {
+  color: inherit;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Общие стили */
+
+.conteiner {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* buttons*/
+/* button*/
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 56px;
+  background-color: var(--white-color);
+  border: 1.4px solid var(--accent-color);
+  border-radius: 55px;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 3.33;
+  color: var(--accent-color);
+}
+
+.button::after {
+  content: "\2193";
+}
+
+.button:focus,
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.conteiner-button {
+  width: 200px;
+  height: 56px;
+  background-color: transparent;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1.4px solid var(--accent-color);
+  border-radius: 55px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 3.33;
+  color: var(--accent-color);
+}
+
+.link-button:focus,
+.link-button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* header */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.t-logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.26;
+  margin-right: 12px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.text-logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.26;
+}
+
+.nav-list {
+  display: flex;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.28;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 40px;
+  padding: 70px 0;
+}
+
+.nav-item .link:focus,
+.nav-item .link:hover {
+  font-weight: 700;
+  color: var(--nav-color);
+}
+
+/* footer */
+
+/*services */
+
+.services-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.55;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.services-paragraph {
+  width: 85%;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.title-item {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.33;
+  color: var(--title-color);
+}
+
+.services-list .paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -37px;
+  margin-left: -30px;
+}
+
+.services-list .item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 37px;
+  padding: 0 52px 47px 37px;
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+/* providers */
+
+.section-providers {
+  width: 32%;
+}
+
+.providers-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--title-color);
+}
+
+.section-providers .paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
 }
