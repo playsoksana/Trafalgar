@@ -15,6 +15,7 @@ body {
   line-height: 1.75;
   letter-spacing: 0em;
   margin: 0;
+  padding: 0;
   color: var(--primary-color);
   background-color: var(--white-color);
 }
@@ -43,6 +44,15 @@ body {
   width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.providers .title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--title-color);
 }
 
 /* buttons*/
@@ -123,10 +133,43 @@ body {
 /* footer */
 
 /* hero */
+.hero {
+  width: 1600px;
+  height: 598px;
+
+  background-image: url(../image/hero-img.svg);
+  background-size: contain;
+  background-position: bottom 0 right 163px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.hero .conteiner {
+  padding-top: 136px;
+  font-size: 21px;
+  line-height: 1.52;
+}
+
+.hero .main-title {
+  margin: 0 0 25px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--title-color);
+}
+
+.hero .block {
+  width: 40%;
+}
 
 /*services */
 .services {
   text-align: center;
+  padding-bottom: 110px;
+}
+
+.services .conteiner {
+  padding-top: 192px;
 }
 
 .services-title {
@@ -143,6 +186,7 @@ body {
   display: flex;
   margin: 0 auto 33px;
   width: 56px;
+  fill: var(--title-color);
 }
 
 .services-paragraph {
@@ -193,25 +237,161 @@ body {
   justify-content: start;
   width: 80px;
   height: 95px;
-  margin-bottom: 19.5px;
+  margin-bottom: 24.4px;
 }
 
 /* providers */
-
-.section-providers {
-  width: 32%;
+.providers {
+  width: 1600px;
+  height: 719px;
+  margin: 0 auto;
+  background-image: url(../image/providers-img.svg);
+  background-repeat: no-repeat;
+  background-position: left 135px top 110px;
+  background-size: 650px 477px;
 }
 
-.providers-title {
+.providers .conteiner {
+  padding-top: 110px;
+  padding-bottom: 115px;
+}
+
+.conteiner-providers {
+  padding-top: 60px;
+  width: 38%;
+  margin-left: auto;
+}
+
+.providers .conteiner-icon {
+  margin: 0 0 31px;
+  display: flex;
+  width: 56px;
+  height: 2px;
+  fill: var(--title-color);
+}
+
+.conteiner-providers .paragraph {
+  margin: 0 0 37px;
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/*mobile-apps*/
+.mobile-apps {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 694px;
+  background-image: url(../image/apps-img.svg);
+  background-repeat: no-repeat;
+  background-size: 665px 434px;
+  background-position: left 771px top 115px;
+}
+
+.mobile-apps .conteiner {
+  padding-top: 115px;
+  padding-bottom: 125px;
+}
+
+.conteiner-apps {
+  padding-top: 38px;
+  margin-left: 15px;
+  width: 36%;
+}
+
+.mobile-apps .title {
+  width: 62%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 26px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.56;
+  line-height: 1.33;
   color: var(--title-color);
 }
 
-.section-providers .paragraph {
+.mobile-apps .conteiner-icon {
+  display: flex;
+  width: 56px;
+  height: 2px;
+  margin-bottom: 31px;
+  fill: var(--title-color);
+}
+
+.mobile-apps .paragraph {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/* web-portal */
+
+.web-portal .conteiner {
+  padding-top: 115px;
+  padding-bottom: 79px;
+
+  color: var(--white-color);
+}
+
+.saying {
+  width: 100%;
+  padding: 64px 118px 79px;
+  border: 1px solid tomato;
+  border-radius: 24px;
+  background-image: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  font-family: Mulish;
+
+  font-weight: 400;
+}
+
+/* .web-portal .buttons {
+  width: 131px;
+  height: 115px;
+} */
+
+.webportal-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+.web-portal .conteiner-icon {
+  display: flex;
+  width: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 66px;
+
+  fill: var(--white-color);
+}
+
+.founder-name {
   margin-top: 0;
   margin-bottom: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 2.18;
+}
+
+.paragraph-card {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 18px;
+  line-height: 2.67;
+}
+
+.quotes {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 19px;
+  line-height: 1.58;
 }
