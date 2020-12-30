@@ -412,26 +412,23 @@ body {
 }
 
 .web-portal .filter {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  margin-left: 200px;
+  display: inline-flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-left: auto;
   margin-right: auto;
+  align-items: center;
   height: 20px;
-  width: 336px;
-  margin-left: -18px;
 
   color: #5b9bf3;
 }
 
 .web-portal .arrows-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
-  height: 100%;
   margin-bottom: 0;
   height: 10px;
+  margin-left: -18px;
 }
 
 .icon {
@@ -440,10 +437,11 @@ body {
 
 .arrows-item {
   height: 100%;
+  width: 100%;
   margin-left: 18px;
 }
 
-.filter .link {
-  display: flex;
+.arrows-link .link {
+  display: block;
   height: 100%;
 }
