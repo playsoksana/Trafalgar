@@ -101,6 +101,11 @@ body {
   color: var(--white-color);
 }
 
+.header .t-logo {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 .text-logo {
   font-size: 24px;
   font-weight: 700;
@@ -133,6 +138,8 @@ body {
 
 /* hero */
 .hero {
+  position: relative;
+
   width: 1600px;
   height: 598px;
 
@@ -141,6 +148,17 @@ body {
   background-position: bottom 0 right 163px;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+
+.hero .block::before {
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  content: "";
+  display: block;
+  width: 131.5px;
+  height: 115px;
+  background-image: url(../image/element.svg);
 }
 
 .hero .conteiner {
@@ -451,7 +469,7 @@ body {
 
 .latest-article .conteiner {
   padding-top: 143px;
-  padding-bottom: 129px;
+  padding-bottom: 200px;
 }
 
 .article-title {
@@ -473,6 +491,7 @@ body {
 
 .latest-article .article-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .latest-article .article-item {
@@ -524,4 +543,82 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* footer */
+.footer {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.footer .conteiner {
+  color: var(--white-color);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 118px 0 113px;
+}
+
+.footer .navigation {
+  width: 50%;
+}
+
+.footer .info {
+  width: 34%;
+}
+
+.footer-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.footer .footer-item {
+  width: calc(100% - 30px / 3);
+}
+
+.footer .footer-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer .text-logo {
+  color: var(--white-color);
+}
+
+.footer .t-logo {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+  margin-bottom: 17px;
+}
+
+.footer-paragraph,
+.footer .rights {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1, 55;
+}
+
+.footer-paragraph {
+  margin-bottom: 31px;
+}
+
+.company,
+.region,
+.help {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 3;
+}
+
+.footer-list {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2.1;
 }
