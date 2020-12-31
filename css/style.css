@@ -410,38 +410,118 @@ body {
   display: flex;
   width: 50%;
 }
-
-.web-portal .filter {
-  display: inline-flex;
-  width: 500px;
+/* filter */
+.filter {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 336.5px;
+  height: 20px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  height: 20px;
 
   color: #5b9bf3;
 }
 
-.web-portal .arrows-list {
+.arrows-list {
   display: flex;
   align-items: center;
+  height: 100%;
   margin-bottom: 0;
-  height: 10px;
-  margin-left: -18px;
-}
-
-.icon {
-  fill: currentColor;
 }
 
 .arrows-item {
-  height: 100%;
   width: 100%;
-  margin-left: 18px;
 }
 
-.arrows-link .link {
-  display: block;
+.arrows-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.arrows-link {
+  display: inline-block;
   height: 100%;
+}
+
+.filter .icon {
+  fill: currentColor;
+}
+
+/* latest-article */
+
+.latest-article .conteiner {
+  padding-top: 143px;
+  padding-bottom: 129px;
+}
+
+.article-title {
+  margin-top: 0;
+  margin-bottom: 26px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1, 55;
+  color: var(--title-color);
+  text-align: center;
+}
+.latest-article .conteiner-icon {
+  margin: 0 auto 79px;
+
+  height: 2px;
+  width: 56px;
+}
+
+.latest-article .article-list {
+  display: flex;
+}
+
+.latest-article .article-item {
+  width: calc(100% / 3 - 30px);
+
+  margin-bottom: 30px;
+
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+}
+
+.latest-article .article-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.article-item .text-card {
+  width: 100%;
+  padding: 24px 51px 35px 33px;
+}
+
+.article-list .title-paragraph {
+  margin-bottom: 25px;
+  margin-top: 0;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.52;
+  color: var(--title-color);
+}
+
+.article-item .paragraph {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.article-item .link {
+  padding: 25px 0 35px;
+
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.65;
+  color: var(--accent-color);
+  fill: currentColor;
+  white-space: pre;
+}
+
+.latest-article .box-botton {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
