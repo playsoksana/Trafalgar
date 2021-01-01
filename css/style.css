@@ -5,6 +5,7 @@
   --background-primari: #e5e5e5;
   --white-color: #ffffff;
   --nav-color: #1f1534;
+  --color-element: #97c3f9;
 }
 
 body {
@@ -150,15 +151,11 @@ body {
   margin: 0 auto;
 }
 
-.hero .block::before {
+.hero .conteiner-icon {
   position: absolute;
   top: 10px;
   left: -35px;
-  content: "";
-  display: block;
-  width: 131.5px;
-  height: 115px;
-  background-image: url(../image/element.svg);
+  fill: var(--color-element);
 }
 
 .hero .conteiner {
@@ -186,7 +183,34 @@ body {
 }
 
 .services .conteiner {
+  position: relative;
   padding-top: 192px;
+}
+
+.services .conteiners-icon {
+  position: absolute;
+  z-index: -1;
+
+  fill: var(--color-element);
+  right: -30px;
+  bottom: 460px;
+}
+
+.services .conteiner::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+
+  display: inline-block;
+  top: 192px;
+  right: 525px;
+  background-image: url(../image/bg-element.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 1119px;
+  height: 968px;
 }
 
 .services-title {
@@ -307,8 +331,17 @@ body {
 }
 
 .mobile-apps .conteiner {
+  position: relative;
+
   padding-top: 115px;
   padding-bottom: 125px;
+}
+
+.mobile-apps .conteiners-icon {
+  position: absolute;
+  top: -120px;
+  right: -285px;
+  fill: var(--color-element);
 }
 
 .conteiner-apps {
@@ -346,10 +379,27 @@ body {
 /* web-portal */
 
 .web-portal .conteiner {
+  position: relative;
+
   padding-top: 115px;
   padding-bottom: 79px;
 
   color: var(--white-color);
+}
+
+.web-portal .conteiners-icon-white {
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  fill: var(--white-color);
+}
+
+.web-portal .conteiners-icon-blue {
+  position: absolute;
+  z-index: -1;
+  bottom: 170px;
+  left: -40px;
+  fill: var(--color-element);
 }
 
 .saying {
