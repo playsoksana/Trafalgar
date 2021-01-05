@@ -89,6 +89,7 @@ body {
   transform: translateX(-50%);
   background-color: var(--white-color);
   z-index: 2;
+  padding: 20px 0;
 }
 
 .navigation {
@@ -136,7 +137,29 @@ body {
 
 .nav-item {
   margin-left: 40px;
-  padding: 60px 0;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header .sub-list {
+  position: absolute;
+
+  display: block;
+
+  opacity: 0;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  padding: 10px;
+  background-color: var(--white-color);
+}
+
+.nav-item:hover .sub-list {
+  opacity: 1;
+}
+
+.nav-item > .link {
+  height: 100%;
 }
 
 .nav-item .link:focus,
