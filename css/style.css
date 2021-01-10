@@ -6,6 +6,7 @@
   --white-color: #ffffff;
   --nav-color: #1f1534;
   --color-element: #97c3f9;
+  --cubic:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   font-style: normal;
   text-decoration: none;
   border: 0;
+  outline: none;
 }
 
 .center {
@@ -66,12 +68,14 @@ body {
   box-sizing: border-box;
   border: 1.4px solid var(--accent-color);
   border-radius: 55px;
-
+  
   font-size: 18px;
   font-weight: 700;
   line-height: 3.33;
   color: var(--accent-color);
   background-color: var(--white-color);
+
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .link-button:focus,
@@ -82,8 +86,9 @@ body {
 
 /* header */
 
-.header .conteiner {
+.header {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -147,6 +152,7 @@ body {
   display: block;
 
   opacity: 0;
+  transition: opacity 250ms var(--cubic);
   top: 100%;
   left: 0;
   width: 200%;
@@ -154,17 +160,20 @@ body {
   background-color: var(--white-color);
 }
 
-.nav-item:hover .sub-list {
+.nav-item:hover .sub-list,
+.nav-item:focus .sub-list {
   opacity: 1;
 }
 
 .nav-item > .link {
   height: 100%;
+  color: inherit;
+  transition: color 250ms var(--cubic);
 }
 
 .nav-item .link:focus,
 .nav-item .link:hover {
-  font-weight: 700;
+  
   color: var(--nav-color);
 }
 
@@ -186,11 +195,39 @@ body {
 
 .hero .conteiner-icon {
   position: absolute;
+  z-index: -20;
   top: 10px;
   left: -45px;
   fill: var(--color-element);
   opacity: 0.3;
+
+  /* animation */
+
+  animation: spin 10000ms linear infinite;
+
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.2);
+    pacity: 0.1;
+    
+  }
+
+  50% { 
+    transform: rotate(180deg) scale(2);
+    opacity: 0.3;
+    
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.2);
+    opacity: 0.1;
+  }
+}
+
+
+
 
 .hero .conteiner {
   padding-top: 160px;
